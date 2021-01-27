@@ -26,18 +26,32 @@
 //	//else
 //	//	printf("被世界改变\n");
 //	//return 0;
-//}
+//}#include <iostream>
+
+int Max(int x, int y)
+{
+	if (x > y)
+		return x;
+	else
+		return y;
+}
+
 int main()
 {
-	int line = 0;
-	printf("加入天启\n");
-	while (line < 20000)
-	{
-		printf("敲一行代码:%d\n",line);
-		line++;
-	}
-	if(line>=20000)
-	printf("得到一个好offe\n");
+	/*int num1 = 10;
+	int num2 = 20;
+	if (num1 > num2)
+		printf("较大值是%d\n", num1);
+	else
+		printf("较大值是%d\n", num2);
+	return 0;*/
+
+	int num1 = 10;
+	int num2 = 20;
+	int max = 0;
+	max = Max(num1, num2);
+	printf("max=%d\n", max);
 	return 0;
+
 }
 
